@@ -1,0 +1,79 @@
+# Python Interview Questions
+
+1. Write a Python program to merge and sort two lists in ascending order, without using sort(), sorted(), or any other built-in sorting function.
+
+2. Write a Python program to filter the given data for Age > 30 and print
+   only 3 columns (Name, Salary, JOB).
+
+   test = {
+       'Name': [' RACHEL  ', ' MONICA  ', ' PHOEBE  ', '  ROSS    ', 'CHANDLER', ' JOEY    '],
+       'Age': [30, 35, 37, 33, 34, 30],
+       'Salary': [100000, 93000, 88000, 120000, 94000, 95000],
+       'JOB': ['DESIGNER', 'CHEF', 'NURSE', 'PALEONTOLOGY', 'IT', 'ARTIST']
+   }
+
+3. Write a Python script to zip log files and upload them to an AWS S3 bucket.
+
+4. Write a Python program to find the second largest number in a list.
+
+5. Write a Python program to sort a dictionary by its values.
+
+   dict1 = {'A': 10, 'B': 20, 'C': 5, 'D': 7}
+
+6. Write a Python program to find the common elements between two lists.
+
+   seriesA = [1, 4, 6, 7, 8, 10]
+   seriesB = [4, 8, 3, 11, 5]
+
+7. Write a Python program to reverse a string.
+
+8. Write a Python script to separate items in a list based on whether they
+   start with 'a' or 'b'.
+
+   items = ['abc', 'vca', 'boa']
+
+9. Write a script to monitor a directory and print the names of new files
+   added, checking every minute.
+
+10. Write a script (Python or Bash) to search for a specific word/name in a file and replace it with another word. (Be ready to execute it live.)
+
+11. Write a script (Python or Bash) to find the first occurrence of a pattern in a given file and extract the full line containing it.
+
+12. Write a script to find all files in the current directory and its subdirectories that were modified more than 5 hours ago but not before
+    today (i.e., modified sometime today, more than 5 hours back).
+
+13. Write a Python script to reverse a string without using a loop, slicing ([::-1]), or any built-in functions/libraries.
+
+14. Write a Python script that:
+    - Takes an integer input (must be at least 2 digits).
+    - If divisible by both 3 and 5 -> report "divisible by both" only
+      (not separately by 3 or by 5).
+    - Else if divisible only by 3, or only by 5 -> report accordingly.
+    - If divisible by neither -> check whether the number is prime.
+    - If it's not prime -> return the list of all factors excluding 1
+      and itself.
+
+15. Write a Python script to list all running EC2 instances tagged Environment=PROD (or whatever tag key you use).
+
+16. Write a Python program to find the missing number in a sequence of integers.
+
+17. Write a Python script to check disk usage and send an alert if it exceeds a given threshold.
+
+18. How do you retrieve secrets from AWS Secrets Manager using Python?
+
+19. Write a Python function that takes a list of job log dictionaries and
+    returns the job IDs where status is "FAILED".
+
+    logs = [
+        {"job_id": 101, "status": "SUCCESS", "timestamp": "2025-06-10T10:00:00"},
+        {"job_id": 102, "status": "FAILED",  "timestamp": "2025-06-10T10:05:00"},
+        {"job_id": 103, "status": "FAILED",  "timestamp": "2025-06-10T10:10:00"},
+        {"job_id": 104, "status": "SUCCESS", "timestamp": "2025-06-10T10:15:00"}
+    ]
+
+20. Write a Python script to monitor a log file in real time:
+    1. Continuously watch a given log file (e.g., /var/log/application.log).
+    2. Detect any new line containing "ERROR" (case-insensitive).
+    3. On detection: print the line to console and send an email alert
+       (mock the email step).
+    4. Run indefinitely, watching for new entries.
