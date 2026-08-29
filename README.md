@@ -1,31 +1,63 @@
-The Challenge:
+# Contributing to Python Interview Questions
 
-We use Trivy to scan container images for vulnerabilities. If any critical vulnerabilities are detected, the base image version needs to be updated to the latest version containing the fixes. Previously, this was a manual task, involving
+Thanks for helping grow this list! This repo collects **real Python interview
+questions** encountered by candidates interviewing for DevOps, MLOps, SRE,
+and related roles. If you've been asked a Python question in an interview,
+please add it here.
 
-1.Going into each microservice's repository
-2.Updating the base image version in the Dockerfile
-3.Creating and raising pull requests (PRs)
+## How to Contribute
 
-With dozens of microservices, this was time-consuming and error-prone.
+1. **Fork** this repository.
+2. Create a new branch for your change:
+   ```bash
+   git checkout -b add-question-<short-description>
+   ```
+3. Open the `Interview_questions` file and add your question at the **end
+   of the list**, continuing the numbering.
+4. Follow the format below.
+5. Commit and push your branch, then open a **Pull Request** against `main`.
 
-The script should take a the following parameters:
+## Question Format
 
-1.A file containing microservice names (e.g., payment-service)
-2.The new base image version (e.g., 6254-abc-867)
-3.A Jira ticket number for tracking
-4.Stash credentials (username and password)
-5.A flag for dry-run (to preview changes without applying them)
-6.Once all microservices are processed, the script outputs a list of PRs for the development team to review and approve. 
+Please keep new entries consistent with the existing style:
 
+```markdown
+<N>. <Clear, one-line problem statement.>
 
+   <If the question includes sample data/code, add it as a fenced code
+   block or indented block, using valid Python syntax.>
+```
 
- 
+**Guidelines:**
+- State the question clearly and completely — someone should be able to
+  attempt it without needing extra context.
+- If there's sample input (a list, dict, DataFrame, etc.), include it and
+  make sure it's syntactically valid Python.
+- If the question was asked with a twist or constraint (e.g. "without using
+  built-in functions," "must execute live," "handle edge cases"), include
+  that constraint — it's often the point of the question.
+- Keep company/interviewer names out of it — just the question itself.
+- Avoid duplicates — do a quick search of the file before adding.
 
-The logic the script should try to implement:
+## What Counts as a Good Question
 
-1.Loops through the microservice list
-2.Clones the repository for each microservice (develop branch)
-3.Creates a feature/<ticket-number> branch
-4.Updates the base image version in the Dockerfile
-5.If dry-run is enabled, it prints the git diff instead of committing changes
-6.Saves the PR link into a file for easy tracking
+- Actually asked in a real interview (DevOps/MLOps/SRE/Python-adjacent roles
+  preferred, but general Python is welcome too).
+- Specific enough to be solvable, not just a vague topic.
+- Categories we're especially interested in: scripting (files, logs,
+  monitoring), cloud/AWS tasks, data structures/algorithms, and Python
+  fundamentals asked with unusual constraints.
+
+## Adding a Solution (Optional)
+
+If you'd like to also contribute a solution, add it to a separate
+`solutions.md` file (create one if it doesn't exist), referencing the
+question number so it's easy to match up.
+
+## Questions or Suggestions
+
+Open an issue if you want to suggest a structural change (e.g. splitting
+into categories, adding difficulty tags) rather than just adding a question.
+
+Thanks for contributing — every question added helps someone else prepping
+for their next interview! 🙌
