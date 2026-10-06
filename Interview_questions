@@ -77,3 +77,7 @@
     3. On detection: print the line to console and send an email alert
        (mock the email step).
     4. Run indefinitely, watching for new entries.
+
+21. l1 = ["apple", "bat", "cat"]
+    l2 = [123, 456, 789]
+    output: ap123ple
