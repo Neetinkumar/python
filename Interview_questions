@@ -84,7 +84,6 @@
 
 22. Write a Python script that reads app.log and counts the number of requests that returned HTTP status 5xx.
 
-Below log is present app.log file
 2026-10-06T10:15:30.123456Z GET /api/v1/users 200 0.013s 192.168.1.100 example.com
 2026-10-06T10:15:31.234567Z GET /login 301 -1.000s 198.51.100.25 example.com
 2026-10-06T10:15:32.345678Z POST /api/v1/checkout 502 2.108s 203.0.113.42 example.com
