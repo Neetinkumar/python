@@ -81,3 +81,17 @@
 21. l1 = ["apple", "bat", "cat"]
     l2 = [123, 456, 789]
     output: ap123ple
+
+22. Write a Python script that reads app.log and counts the number of requests that returned HTTP status 5xx.
+
+Below log is present app.log file
+2026-10-06T10:15:30.123456Z GET /api/v1/users 200 0.013s 192.168.1.100 example.com
+2026-10-06T10:15:31.234567Z GET /login 301 -1.000s 198.51.100.25 example.com
+2026-10-06T10:15:32.345678Z POST /api/v1/checkout 502 2.108s 203.0.113.42 example.com
+2026-10-06T10:15:33.456789Z GET /static/css/main.css 304 0.002s 192.168.1.101 example.com
+2026-10-06T10:15:34.567890Z GET /images/logo.png 200 0.016s 198.51.100.99 example.com
+2026-10-06T10:15:35.678901Z GET /admin/config 403 -1.000s 203.0.113.15 example.com
+2026-10-06T10:15:36.789012Z GET /api/v1/reports 504 5.001s 192.168.1.100 example.com
+2026-10-06T10:15:37.890123Z PUT /api/v1/profile 201 0.047s 198.51.100.12 example.com
+2026-10-06T10:15:38.901234Z GET /non-existent-page 404 0.009s 203.0.113.88 example.com
+2026-10-06T10:15:39.012345Z DELETE /api/v1/items/99 200 0.011s 192.168.1.100 example.coms
